@@ -1,5 +1,9 @@
 import subprocess
+import os
 from docx import Document
+
+input_directory = "/sandbox"
+input_files = os.listdir(input_directory)
 
 # Function to accept all tracked changes in a DOCX file
 def accept_all_changes(docx_file):
