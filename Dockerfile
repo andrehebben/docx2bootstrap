@@ -15,4 +15,4 @@ WORKDIR /app
 RUN pip3 install -r requirements.txt
 
 # Specify the command to run when the container starts
-CMD ["python3", "your_script.py"]
+CMD ["python3", "convert.py"]
