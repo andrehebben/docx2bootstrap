@@ -32,3 +32,10 @@ jobs:
           python -m pip install flake8  # Install flake8 (you can replace this with your preferred linter)
           flake8 .  # Run your code linter here
         continue-on-error: true
+
+      - name: Install Pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/2.14.2/pandoc-2.14.2-linux-amd64.tar.gz
+          tar xvzf pandoc-2.14.2-linux-amd64.tar.gz
+          sudo mv pandoc-2.14.2/bin/pandoc /usr/local/bin/
+            if: runner.os == 'Linux'
