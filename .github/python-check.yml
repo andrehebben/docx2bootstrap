@@ -1,0 +1,34 @@
+name: Python Code Check
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name if needed
+  pull_request:
+    branches:
+      - main  # Adjust the branch name if needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8  # Specify your desired Python version
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          # Additional setup steps if needed
+
+      - name: Run Code Linter
+        run: |
+          # Optionally, you can set up a virtual environment here
+          python -m pip install flake8  # Install flake8 (you can replace this with your preferred linter)
+          flake8 .  # Run your code linter here
+        continue-on-error: true
