@@ -1,0 +1,165 @@
+/* Heading Styles */
+
+h1 {
+  font-size: 26pt;
+  
+  margin-top: 16pt;
+  margin-bottom: 16pt;
+}
+
+h2 {
+  font-size: 28pt;
+
+  line-height: 38pt;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+}
+
+h3 {
+  font-size: 22pt;
+}
+
+h4 {
+  font-size: 21pt;
+}
+
+h5 {
+  font-size: 20pt;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+
+.heading-number {
+    margin-right: 10px;
+}
+
+h2 .heading-number {
+ 
+}
+
+h2 .heading-title {
+  margin-bottom: 10px;
+}
+
+.chapter_intro .chapter4 {
+  color: #88979f;
+}
+
+.chapter1 {
+  color: #008aa8;
+}
+
+/*
+.chapter2 {
+  color: rgb(135, 13, 136);
+}
+*/
+
+.chapter3 {
+  color: #008aa8;
+}
+
+.chapter4 {
+  color: #960;
+}
+
+/* Figure Styles */
+
+figure {
+  margin: auto 10vw auto 10vw;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footnote Styles */
+
+sup {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.footnote {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+/* Reference Icon Styles */
+
+.reference {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.reference img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Inline Reference Styles */
+
+a[href^="/"] {
+  color: #06c;
+  text-decoration: none;
+}
+
+a[href^="/"]:hover {
+  text-decoration: underline;
+}
+
+/* Accordion buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.25rem!important;
+  cursor: pointer;
+}
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004499;
+}
+
+button > h1, button > h2, button > h3, button > h4, button > h5, button > h6 {
+  color: #fff!important;
+}
+
+
+div.region-nav-main {
+   margin-right:10rem!important;
+}
+
+button.accordion-button {
+   padding: 1rem 1.25rem!important;
+}
+
+
+.menu-item {
+  margin: 0;
+  padding-top: 0.2em;
+  white-space: normal;
+  float: left;
+  width: 250px;
+  height: auto;
+  word-wrap: break-word;
+}
